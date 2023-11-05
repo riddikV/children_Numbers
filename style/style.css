@@ -1,0 +1,170 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+	padding: 0;
+
+	text-align: center;
+	color: #333;
+
+  background-color: rgb(255, 196, 0);
+  overflow: hidden;
+
+	position: relative;
+}
+
+/*wrapper/Первое окно*/
+.wrapper{
+	position: absolute;
+	z-index: 900;
+	top: 0;
+	left: 0;
+
+	height: 100vh;
+	width: 100vw;
+	background-color: #3F3F3F;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s ease-in-out 2.3s;
+}
+
+.logoOne{
+	height: 215px;
+	width: 150px;
+	font-size: 0;
+
+	background-color: #aeadad77;
+	transition: all .5s ease-in-out 1.5s;
+	opacity: .5;
+	overflow: hidden;
+}
+
+.logoOne_img{
+  transition: all 1.5s ease-in-out;
+}
+
+.logoOne img:nth-child(2){
+  margin: 10px 0; 
+  transform: translateX(100%);
+}
+.logoOne img:nth-child(odd) {
+  transform: translateX(-100%);
+}
+/*wrapperEnd*/
+
+/*goodEndPlay/TWO WINDOWS*/
+.goodEndPlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgb(48, 238, 92);
+	height: 100vh;
+	width: 100vw;
+	z-index: 890;
+
+	display: none;
+	transition: all 1s ease-in-out;
+	transform: translateX(100%);
+}
+
+.goodEndPlay h1{
+	padding-top: 25%;
+}
+
+/*header*/
+.header{
+	height: 70px;
+	padding: 15px 0;
+	text-align: center;
+}
+
+.header h1{
+	font-size: 20px;
+	text-shadow: 1px 1px 3px #353232;
+}
+
+/*playNumber*/
+.windowPLayNumber{
+  width: 100%;
+  max-width: 1200px;
+  height: 70vh;
+
+  display: flex;
+  flex: 1;
+  align-items: center;/*height zona1 zona2*/
+  justify-content: space-between;
+
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+}
+
+.windowPLayNumber .zona{
+	flex: 1;
+  align-items: center;
+	text-align: center;
+
+  background-color:rgba(0, 0, 0, .1);
+  padding: 10px 15px 3px;
+  border-radius: 20px;
+  transition: all .3s;
+}
+
+.zona:nth-child(odd){
+	max-width: 210px;
+}
+
+.container__number{
+	max-width: 350px;
+	min-height: 250px;
+	max-height: 500px
+}
+
+.zona .number{
+	width: 100%;
+	font-size: 20px;
+	border-radius: 10px;
+	margin-bottom: 7px;
+	padding: 5px 0;
+	background-color: #fff;
+}
+
+
+/*footer*/
+.footer{
+	padding: 20px;
+}
+
+.button{
+  display: inline-block;
+  background-color: #3F3F3F;
+  padding: 15px 30px;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all .2s;
+}
+
+.button:hover{
+  background-color: rgb(255, 196, 0);
+  color: #3F3F3F;
+  outline: 5px ridge #3F3F3F
+}
+
+/*playGeam*/
+.hide{
+	display: none;
+}
+
+.trans{
+	transform: scale(1.1, .9);
+}
+
+.widthNull{
+	width: 10px;
+}
+
+.goodPlay{
+	transform: translateX(0);
+}
